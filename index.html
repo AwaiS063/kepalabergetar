@@ -1,0 +1,76 @@
+export default {
+  async fetch(request, env, ctx) {
+    const htmlContent = `
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Introducing KepalaBergetar9.com</title>
+          <style>
+              body {
+                  font-family: Arial, sans-serif;
+                  line-height: 1.6;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f5f5f5;
+                  color: #333;
+              }
+              .container {
+                  max-width: 800px;
+                  margin: 20px auto;
+                  padding: 20px;
+                  background-color: #fff;
+                  border-radius: 5px;
+                  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              }
+              h1, h2 {
+                  color: #333;
+                  text-align: center;
+              }
+              p {
+                  margin-bottom: 20px;
+              }
+              ul {
+                  margin-bottom: 20px;
+              }
+              li {
+                  list-style-type: disc;
+                  margin-left: 20px;
+              }
+              .btn {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #007bff;
+                  color: #fff;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  transition: background-color 0.3s;
+              }
+              .btn:hover {
+                  background-color: #0056b3;
+              }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <h1>Introducing KepalaBergetar9.com</h1>
+              <p>Among the dedicated websites for Malaysian entertainment, KepalaBergetar9.com stands out as a reliable and comprehensive platform for streaming movies and dramas. Here's why it's worth checking out:</p>
+              <ul>
+                  <li><strong>Extensive Library:</strong> <a href="https://www.KepalaBergetar9.com">Visit KepalaBergetar9.com!</a>
+      offers an extensive library of Malaysian movies and dramas, ranging from classic favorites to the latest releases. Whether you're in the mood for a romantic comedy or a thrilling action film, you'll find plenty of options to choose from.</li>
+                  <li><strong>Regular Updates:</strong> The website is regularly updated with new releases, ensuring that viewers always have access to the latest Malaysian entertainment. You can stay up-to-date with your favorite shows and discover new gems without missing a beat.</li>
+                  <li><strong>User-Friendly Interface:</strong> KepalaBergetar9.com features a user-friendly interface that makes browsing and streaming a breeze. With intuitive navigation and search functions, finding your favorite Malaysian movies and dramas is quick and effortless.</li>
+                  <li><strong>High-Quality Streaming:</strong> Enjoy high-quality streaming of Malaysian movies and dramas without any buffering or interruptions. KepalaBergetar9.com prioritizes user experience, delivering smooth playback for an immersive viewing experience.</li>
+              </ul>
+              <h2>Conclusion</h2>
+              <p>Watching Malaysian movies and dramas online is easier than ever before, thanks to the internet and dedicated streaming platforms. Whether you're a fan of classic Malay cinema or contemporary television dramas, there's no shortage of options available for viewers around the world. If you're looking for a convenient and reliable platform to stream Malaysian entertainment, be sure to check out <a href="https://kepalabergetar9.com/">KepalaBergetar9.com</a> for an unparalleled viewing experience.</p>
+              <p>So, what are you waiting for? Dive into the vibrant world of Malaysian cinema and television dramas today!</p>
+          </div>
+      </body>
+      </html>
+    `;
+    
+    return new Response(htmlContent, { headers: { "Content-Type": "text/html" } });
+  },
+};
